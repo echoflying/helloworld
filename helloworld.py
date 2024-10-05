@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 
-is_on_streamlit_cloud = 'STREAMLIT_CLOUD' in os.environ
+is_on_streamlit_cloud = 'STREAMLIT_CLOUD' in st.secrets
 
 st.header("Hello World")
 
